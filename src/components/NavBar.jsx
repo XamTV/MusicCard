@@ -1,3 +1,5 @@
+import { PropTypes } from "prop-types";
+
 function NavBar({ Albums, albumIndex, setAlbumIndex }) {
   const handleNextAlbum = () => {
     setAlbumIndex(albumIndex + 1);
@@ -20,5 +22,11 @@ function NavBar({ Albums, albumIndex, setAlbumIndex }) {
     </>
   );
 }
+
+NavBar.propTypes = {
+  albumIndex: PropTypes.number.isRequired,
+  Albums: PropTypes.array.isRequired,
+  setAlbumIndex: PropTypes.func.isRequired,
+};
 
 export default NavBar;

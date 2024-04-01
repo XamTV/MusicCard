@@ -1,0 +1,17 @@
+.container {
+  display: grid;
+  grid-template-columns: 2;
+  grid-template-rows: 2;
+  background-color: lightgrey;
+  img {
+    padding: 0.5rem 0 0 0.5rem;
+    width: 300px;
+  }
+  .infos {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  p {
+    text-align: left;
+  }
+}
