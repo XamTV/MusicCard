@@ -3,7 +3,6 @@ import { PropTypes } from "prop-types";
 function NavBar({ Albums, albumIndex, setAlbumIndex }) {
   const handleNextAlbum = () => {
     setAlbumIndex(albumIndex + 1);
-    console.log(albumIndex);
   };
 
   const handlePreviousAlbum = () => {

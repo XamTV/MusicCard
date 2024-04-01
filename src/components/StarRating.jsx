@@ -20,13 +20,16 @@ function StarRating() {
               />
               <FaStar
                 className="star"
-                key={star}
-                size={25}
+                key={`star-${currentRating}`}
+                size={30}
                 color={
                   currentRating <= (hover || rating) ? "#ffc107" : "#e4e5e9"
                 }
                 onMouseEnter={() => setHover(currentRating)}
                 onMouseLeave={() => setHover(null)}
+                onClick={() => {
+                  alert(`Your rating is ${currentRating}/5`);
+                }}
               />
             </>
           );

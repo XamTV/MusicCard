@@ -12,7 +12,7 @@ function Card({ Albums }) {
           <h2>{Albums.artist} </h2>
           <h2>( {Albums.date} ) </h2>
         </figcaption>
-        <h3>Rating</h3> <StarRating />
+        <h3>Rating </h3> <StarRating />
       </figure>
     </>
   );
